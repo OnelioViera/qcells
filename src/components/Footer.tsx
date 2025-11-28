@@ -5,7 +5,14 @@ import { getGlobal, getFooter, getStrapiMedia } from '@/lib/strapi'
 export async function Footer() {
   // Fetch global data to get Lindsay logo and footer content
   const global = await getGlobal()
-  const footerData = await getFooter()
+  
+  // Try to fetch footer data, but don't crash if it doesn't exist yet
+  let footerData = null
+  try {
+    footerData = await getFooter()
+  } catch (error) {
+    console.log('Footer content type not yet available in Strapi, using defaults')
+  }
   
   const lindsayLogoUrl = global?.data?.lindsayLogo?.url 
     ? getStrapiMedia(global.data.lindsayLogo.url) 
@@ -14,7 +21,7 @@ export async function Footer() {
   const siteName = global?.data?.siteName || 'Lindsay Precast'
   const currentYear = new Date().getFullYear()
   
-  // Footer content from Strapi
+  // Footer content from Strapi (with fallbacks)
   const footer = footerData?.data || {}
   const linkedinUrl = footer.linkedinUrl || 'https://www.linkedin.com/company/lindsay-precast'
   const facebookUrl = footer.facebookUrl || 'https://www.facebook.com/lindsayprecast'
