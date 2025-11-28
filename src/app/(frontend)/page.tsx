@@ -19,6 +19,16 @@ async function getHomepageData() {
 export default async function HomePage() {
   const homepage = await getHomepageData()
 
+  // Debug: Log stats to see what Strapi is returning
+  console.log('Stats from Strapi:', {
+    stat1Value: homepage?.stat1Value,
+    stat1Label: homepage?.stat1Label,
+    stat2Value: homepage?.stat2Value,
+    stat2Label: homepage?.stat2Label,
+    stat3Value: homepage?.stat3Value,
+    stat3Label: homepage?.stat3Label,
+  })
+
   // Fallback content if CMS not configured yet
   const heroTitle = homepage?.heroTitle || 'Tesla Megapack 2'
   const heroSubtitle = homepage?.heroSubtitle || 'Grade Beams'

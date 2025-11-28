@@ -43,28 +43,20 @@
         "audios"
       ]
     },
-    "stat1Value": {
-      "type": "string",
-      "default": "69"
+    "capabilitiesTitle": {
+      "type": "string"
     },
-    "stat1Label": {
-      "type": "string",
-      "default": "Total Beams Manufactured"
+    "capabilitiesDescription": {
+      "type": "string"
     },
-    "stat2Label": {
-      "type": "string",
-      "default": "Maximum Beam Length"
+    "value1": {
+      "type": "blocks"
     },
-    "stat2Value": {
-      "type": "text"
+    "value2": {
+      "type": "blocks"
     },
-    "stat3Value": {
-      "type": "string",
-      "default": "4500"
-    },
-    "stat3Label": {
-      "type": "string",
-      "default": "PSI Concrete Strength"
+    "value3": {
+      "type": "blocks"
     },
     "partnersTitle": {
       "type": "string"

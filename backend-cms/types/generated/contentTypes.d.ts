@@ -516,6 +516,8 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    capabilitiesDescription: Schema.Attribute.String;
+    capabilitiesTitle: Schema.Attribute.String;
     companyLogos1: Schema.Attribute.Component<'homepage.company-logo', true> &
       Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
@@ -540,18 +542,12 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
     partnersSubtitle: Schema.Attribute.String;
     partnersTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    stat1Label: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'Total Beams Manufactured'>;
-    stat1Value: Schema.Attribute.String & Schema.Attribute.DefaultTo<'69'>;
-    stat2Label: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'Maximum Beam Length'>;
-    stat2Value: Schema.Attribute.Text;
-    stat3Label: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'PSI Concrete Strength'>;
-    stat3Value: Schema.Attribute.String & Schema.Attribute.DefaultTo<'4500'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    value1: Schema.Attribute.Blocks;
+    value2: Schema.Attribute.Blocks;
+    value3: Schema.Attribute.Blocks;
   };
 }
 
