@@ -34,7 +34,7 @@ export async function Footer() {
     <footer className="bg-lindsay-navy text-white">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
           
           {/* Logo and Social Media Column */}
           <div className="space-y-6">
@@ -89,64 +89,10 @@ export async function Footer() {
             </div>
           </div>
 
-          {/* Products & Services Column 1 */}
-          <div>
-            <h3 className="text-lg font-bold mb-4">Products & Services</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/projects" className="hover:text-lindsay-red transition">
-                  Utility & Electrical
-                </Link>
-              </li>
-              <li>
-                <Link href="/projects" className="hover:text-lindsay-red transition">
-                  Bridge, Box & Wing Walls
-                </Link>
-              </li>
-              <li>
-                <Link href="/projects" className="hover:text-lindsay-red transition">
-                  Skid Mounted Solutions
-                </Link>
-              </li>
-              <li>
-                <Link href="/projects" className="hover:text-lindsay-red transition">
-                  Renewables
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Products & Services Column 2 */}
-          <div>
-            <h3 className="text-lg font-bold mb-4 text-transparent">Services</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/projects" className="hover:text-lindsay-red transition">
-                  Standard Products
-                </Link>
-              </li>
-              <li>
-                <Link href="/projects" className="hover:text-lindsay-red transition">
-                  VA Cemetery Products
-                </Link>
-              </li>
-              <li>
-                <Link href="/projects" className="hover:text-lindsay-red transition">
-                  Custom Products
-                </Link>
-              </li>
-              <li>
-                <Link href="/projects" className="hover:text-lindsay-red transition">
-                  Fabrication
-                </Link>
-              </li>
-            </ul>
-          </div>
-
           {/* Navigation Links Column */}
           <div>
             <h3 className="text-lg font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-3 text-sm">
               <li>
                 <Link href="/" className="hover:text-lindsay-red transition">
                   Home
@@ -155,26 +101,6 @@ export async function Footer() {
               <li>
                 <Link href="/projects" className="hover:text-lindsay-red transition">
                   Projects
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="hover:text-lindsay-red transition">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="/careers" className="hover:text-lindsay-red transition">
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link href="/locations" className="hover:text-lindsay-red transition">
-                  Locations
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-lindsay-red transition">
-                  Contact
                 </Link>
               </li>
             </ul>
