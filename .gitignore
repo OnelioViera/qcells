@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# Environment variables
+.env
+.env*.local
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Payload
+payload-types.ts
+.payload/
+
+# Media uploads
+public/media/
+
+# Strapi
+backend-cms/.tmp/
+backend-cms/.cache/
+backend-cms/build/
+backend-cms/data/
+backend-cms/public/uploads/
+backend-cms/.strapi-updater.json
+backend-cms/.strapi/
+
+# Vercel
+.vercel/
+
+# Deployment secrets (templates are OK to commit)
+.env.production
+backend-cms/.env.production
+

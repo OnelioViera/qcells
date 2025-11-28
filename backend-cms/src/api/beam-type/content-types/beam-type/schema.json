@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "beam_types",
+  "info": {
+    "singularName": "beam-type",
+    "pluralName": "beam-types",
+    "displayName": "Beam Type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "type": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "center",
+        "end"
+      ]
+    },
+    "length": {
+      "type": "decimal"
+    },
+    "width": {
+      "type": "decimal"
+    },
+    "height": {
+      "type": "decimal"
+    },
+    "weight": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "technicalDrawing": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rebar_configs",
+  "info": {
+    "singularName": "rebar-config",
+    "pluralName": "rebar-configs",
+    "displayName": "Rebar Config"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "barSize": {
+      "type": "string"
+    },
+    "spacing": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "string"
+    },
+    "totalLinearFeet": {
+      "type": "decimal"
+    },
+    "drawings": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

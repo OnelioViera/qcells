@@ -1,0 +1,12 @@
+backend-cms
+node_modules
+.next
+.env.local
+.env*.local
+*.log
+.DS_Store
+.vscode
+.idea
+*.md
+!README.md
+

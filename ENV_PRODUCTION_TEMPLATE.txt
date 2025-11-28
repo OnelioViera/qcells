@@ -1,0 +1,19 @@
+# =================================
+# NEXT.JS PRODUCTION ENVIRONMENT VARIABLES
+# =================================
+# Copy this to your Vercel project settings
+# Dashboard → Project → Settings → Environment Variables
+
+# Strapi CMS URL (Your Render deployment URL)
+NEXT_PUBLIC_STRAPI_URL=https://your-strapi-app.onrender.com
+
+# NextAuth Configuration
+NEXTAUTH_URL=https://your-site.vercel.app
+NEXTAUTH_SECRET=generate-with-openssl-rand-base64-32
+
+# Database for NextAuth (Use Vercel Postgres or external DB)
+DATABASE_URL=postgres://username:password@host:5432/database
+
+# Optional: Analytics
+NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
+

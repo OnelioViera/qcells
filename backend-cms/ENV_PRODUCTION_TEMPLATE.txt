@@ -1,0 +1,38 @@
+# =================================
+# STRAPI PRODUCTION ENVIRONMENT VARIABLES
+# =================================
+# Copy these to your Render dashboard
+# Dashboard → Service → Environment
+
+# Host Configuration
+HOST=0.0.0.0
+PORT=1337
+NODE_ENV=production
+
+# Database (Automatically set by Render PostgreSQL)
+DATABASE_CLIENT=postgres
+DATABASE_URL=postgresql://user:password@host:5432/database
+DATABASE_SSL=true
+DATABASE_SSL_REJECT_UNAUTHORIZED=false
+
+# Security Keys (Generate unique values for each)
+# Generate with: node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"
+APP_KEYS=key1,key2,key3,key4
+API_TOKEN_SALT=generate-random-string-here
+ADMIN_JWT_SECRET=generate-random-string-here
+TRANSFER_TOKEN_SALT=generate-random-string-here
+JWT_SECRET=generate-random-string-here
+
+# Frontend URL (Your Vercel deployment)
+STRAPI_ADMIN_CLIENT_URL=https://your-site.vercel.app
+STRAPI_ADMIN_CLIENT_PREVIEW_SECRET=your-preview-secret-here
+
+# Admin User (for initial setup)
+ADMIN_EMAIL=admin@example.com
+ADMIN_PASSWORD=change-this-password
+
+# Optional: File Upload (Cloudinary)
+# CLOUDINARY_NAME=your-cloud-name
+# CLOUDINARY_KEY=your-api-key
+# CLOUDINARY_SECRET=your-api-secret
+

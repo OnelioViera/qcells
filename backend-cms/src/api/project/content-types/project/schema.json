@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "customer": {
+      "type": "string",
+      "required": true
+    },
+    "fabricator": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "totalQuantity": {
+      "type": "integer"
+    },
+    "centerBeams": {
+      "type": "integer"
+    },
+    "endBeams": {
+      "type": "integer"
+    },
+    "totalWeight": {
+      "type": "decimal"
+    },
+    "projectStatus": {
+      "type": "enumeration",
+      "required": true,
+      "default": "active",
+      "enum": [
+        "draft",
+        "active",
+        "complete",
+        "archived"
+      ]
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "manufacturing_steps": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::manufacturing-step.manufacturing-step"
+    },
+    "rebar_configs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::rebar-config.rebar-config"
+    }
+  }
+}

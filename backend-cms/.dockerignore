@@ -1,0 +1,15 @@
+.tmp/
+.cache/
+.git/
+build/
+node_modules/
+data/
+.env
+*.log
+.DS_Store
+.vscode/
+.idea/
+*.md
+!README.md
+.github/
+

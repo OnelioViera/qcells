@@ -1,0 +1,82 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": {
+      "type": "string",
+      "default": "Tesla Megapack 2",
+      "required": true
+    },
+    "heroSubtitle": {
+      "type": "string",
+      "default": "Grade Beams"
+    },
+    "heroDescription": {
+      "type": "blocks"
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "heroBackgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "stat1Value": {
+      "type": "string",
+      "default": "69"
+    },
+    "stat1Label": {
+      "type": "string",
+      "default": "Total Beams Manufactured"
+    },
+    "stat2Label": {
+      "type": "string",
+      "default": "Maximum Beam Length"
+    },
+    "stat2Value": {
+      "type": "text"
+    },
+    "stat3Value": {
+      "type": "string",
+      "default": "4500"
+    },
+    "stat3Label": {
+      "type": "string",
+      "default": "PSI Concrete Strength"
+    },
+    "partnersTitle": {
+      "type": "string"
+    },
+    "partnersSubtitle": {
+      "type": "string"
+    },
+    "companyLogos1": {
+      "type": "component",
+      "component": "homepage.company-logo",
+      "repeatable": true,
+      "required": true
+    }
+  }
+}

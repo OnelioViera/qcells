@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCELL Tesla Megapack 2 Grade Beams</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Mono', monospace;
+        }
+        
+        .animate-bounce {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        
+        .gradient-text {
+            background: linear-gradient(to right, #60a5fa, #22d3ee);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-2px);
+            border-color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-slate-950/95 backdrop-blur z-50 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-500 rounded flex items-center justify-center font-bold text-sm">LP</div>
+                <span class="text-sm font-semibold">Lindsay Precast</span>
+            </div>
+            <button class="text-xs text-slate-400 hover:text-white transition" onclick="document.getElementById('hero').scrollIntoView({behavior: 'smooth'})">
+                QCELL Megapack 2
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-32 pb-20 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-blue-500/10 to-transparent pointer-events-none"></div>
+        
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="mb-6 inline-block">
+                <div class="flex items-center gap-4 px-4 py-2 bg-blue-500/10 rounded-full border border-blue-500/20">
+                    <div class="w-6 h-6 bg-gradient-to-br from-blue-400 to-blue-600 rounded flex items-center justify-center text-xs font-bold">Q</div>
+                    <span class="text-sm text-slate-300">QCELL Partnership</span>
+                </div>
+            </div>
+
+            <h1 class="text-6xl md:text-7xl font-bold mb-6 leading-tight">
+                Tesla Megapack 2 <span class="gradient-text">Grade Beams</span>
+            </h1>
+
+            <p class="text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+                Custom precast concrete foundation beams engineered and manufactured for QCELL's Tesla Megapack 2 battery energy storage systems
+            </p>
+
+            <button onclick="document.getElementById('overview').scrollIntoView({behavior: 'smooth'})" class="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded font-semibold transition transform hover:scale-105">
+                Explore Project →
+            </button>
+
+            <div class="flex justify-center mt-20 animate-bounce">
+                <svg class="w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="py-20 px-6 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4">Project Overview</h2>
+            <p class="text-slate-400 mb-12">Manufacturing 69 precision-engineered grade beams for battery energy storage foundations</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card-hover bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Fabricator</h3>
+                    <p class="text-slate-400">Lindsay Precast - Specialized in industrial precast structures</p>
+                </div>
+
+                <div class="card-hover bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Customer</h3>
+                    <p class="text-slate-400">QCELL - Leading energy storage solutions provider</p>
+                </div>
+
+                <div class="card-hover bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Quantities</h3>
+                    <p class="text-slate-400">23 center beams + 46 end beams = 69 total</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beam Types Section -->
+    <section id="beams" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4">Beam Types & Specifications</h2>
+            <p class="text-slate-400 mb-12">Three beam configurations optimized for Megapack 2 structure</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card-hover bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-b from-blue-600/20 to-transparent flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="text-5xl font-bold text-blue-400 mb-2">354.5"</div>
+                            <p class="text-slate-400">Length</p>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-4">Center Beam (Large)</h3>
+                        <ul class="space-y-3 text-slate-300">
+                            <li class="flex gap-2"><span class="text-blue-400">•</span> Qty: 23</li>
+                            <li class="flex gap-2"><span class="text-blue-400">•</span> Weight: 109,974 lbs (total)</li>
+                            <li class="flex gap-2"><span class="text-blue-400">•</span> Rebar: (16) #8 Longitudinal</li>
+                            <li class="flex gap-2"><span class="text-blue-400">•</span> Type 1/L cement, 4500 psi @ 28 days</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-b from-cyan-600/20 to-transparent flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="text-5xl font-bold text-cyan-400 mb-2">~200"</div>
+                            <p class="text-slate-400">Length (approx)</p>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-4">End Beams (Small)</h3>
+                        <ul class="space-y-3 text-slate-300">
+                            <li class="flex gap-2"><span class="text-cyan-400">•</span> Qty: 46</li>
+                            <li class="flex gap-2"><span class="text-cyan-400">•</span> Similar rebar configuration</li>
+                            <li class="flex gap-2"><span class="text-cyan-400">•</span> Support exterior structural loads</li>
+                            <li class="flex gap-2"><span class="text-cyan-400">•</span> Match center beam specifications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manufacturing Process -->
+    <section id="process" class="py-20 px-6 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4">Manufacturing Process</h2>
+            <p class="text-slate-400 mb-12">Step-by-step production workflow</p>
+
+            <div class="space-y-6">
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-lg">1</div>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold mb-1">Custom Forms Fabrication</h3>
+                        <p class="text-slate-400">Specialized hinged formwork manufactured for beam geometry and anchor placement</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-lg">2</div>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold mb-1">Rebar Cage Assembly</h3>
+                        <p class="text-slate-400">Precision placement of (16) #8 longitudinal bars with #4 stirrups @ 12" o.c.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-lg">3</div>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold mb-1">Cage Installation</h3>
+                        <p class="text-slate-400">Rebar assembly positioned in forms with chairs and proper concrete cover</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-lg">4</div>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold mb-1">Concrete Pour</h3>
+                        <p class="text-slate-400">Type 1/L cement mix, 3% air, 4500 psi @ 28 days per specifications</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-lg">5</div>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold mb-1">Form Removal</h3>
+                        <p class="text-slate-400">Hinged walls rotate away for easy access and removal from finished beam</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-lg">6</div>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold mb-1">Beam Extraction</h3>
+                        <p class="text-slate-400">LUA88G lifting anchors enable safe removal and transport to storage</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rebar Details -->
+    <section id="rebar" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4">Rebar Configuration</h2>
+            <p class="text-slate-400 mb-12">Detailed reinforcement specifications</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6">Rebar Schedule</h3>
+                    <div class="space-y-4 text-sm">
+                        <div class="flex justify-between pb-3 border-b border-slate-700">
+                            <span class="text-slate-300">Size</span>
+                            <span class="font-semibold">Qty</span>
+                        </div>
+                        <div class="flex justify-between pb-3">
+                            <span class="text-slate-300">#8 Longitudinal Bars</span>
+                            <span class="font-semibold text-blue-400">16</span>
+                        </div>
+                        <div class="flex justify-between pb-3">
+                            <span class="text-slate-300">#4 Stirrups @ 12" o.c.</span>
+                            <span class="font-semibold text-blue-400">60</span>
+                        </div>
+                        <div class="flex justify-between pb-3">
+                            <span class="text-slate-300">#4 Horizontal U-Bars</span>
+                            <span class="font-semibold text-blue-400">6</span>
+                        </div>
+                        <div class="flex justify-between pb-3">
+                            <span class="text-slate-300">#4 Vertical U-Bars</span>
+                            <span class="font-semibold text-blue-400">14</span>
+                        </div>
+                        <div class="flex justify-between pt-3 border-t border-slate-700 font-bold">
+                            <span>Total Rebar Weight</span>
+                            <span class="text-blue-400">1,700 lbs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6">Key Specifications</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <span class="text-slate-400 text-sm">CONCRETE COVER</span>
+                            <div class="text-lg font-semibold">3" clear to all reinforcement</div>
+                        </li>
+                        <li>
+                            <span class="text-slate-400 text-sm">GRADE 60 REBAR</span>
+                            <div class="text-lg font-semibold">ASTM A615 standard</div>
+                        </li>
+                        <li>
+                            <span class="text-slate-400 text-sm">LAP SPLICES</span>
+                            <div class="text-lg font-semibold">Class B, 48" minimum overlap</div>
+                        </li>
+                        <li>
+                            <span class="text-slate-400 text-sm">REBAR CHAIRS</span>
+                            <div class="text-lg font-semibold">3" height for cage stabilization</div>
+                        </li>
+                        <li>
+                            <span class="text-slate-400 text-sm">CHAMFERS</span>
+                            <div class="text-lg font-semibold">3/4" on exposed edges (top)</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section id="features" class="py-20 px-6 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12">Key Features</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <div class="flex gap-4 items-start">
+                        <div class="w-6 h-6 bg-blue-500 rounded-full flex-shrink-0 mt-1"></div>
+                        <div>
+                            <h3 class="font-bold mb-1">Field-Installed Anchors</h3>
+                            <p class="text-slate-400">Kwik Bolt TZ2 expansion anchors installed post-delivery by customer</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="w-6 h-6 bg-blue-500 rounded-full flex-shrink-0 mt-1"></div>
+                        <div>
+                            <h3 class="font-bold mb-1">Hinged Form Walls</h3>
+                            <p class="text-slate-400">Rotatable forms for efficient removal without damage</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="w-6 h-6 bg-blue-500 rounded-full flex-shrink-0 mt-1"></div>
+                        <div>
+                            <h3 class="font-bold mb-1">LUA88G Lifting Anchors</h3>
+                            <p class="text-slate-400">Embedded for safe handling and transportation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex gap-4 items-start">
+                        <div class="w-6 h-6 bg-cyan-500 rounded-full flex-shrink-0 mt-1"></div>
+                        <div>
+                            <h3 class="font-bold mb-1">Precision Engineering</h3>
+                            <p class="text-slate-400">Tolerances per NPCA Quality Control Manual standards</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="w-6 h-6 bg-cyan-500 rounded-full flex-shrink-0 mt-1"></div>
+                        <div>
+                            <h3 class="font-bold mb-1">High-Strength Concrete</h3>
+                            <p class="text-slate-400">4500 psi @ 28 days with fly ash cement</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="w-6 h-6 bg-cyan-500 rounded-full flex-shrink-0 mt-1"></div>
+                        <div>
+                            <h3 class="font-bold mb-1">Coordinated Production</h3>
+                            <p class="text-slate-400">Manufactured at Lindsay Precast Dacono facility</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Assembly -->
+    <section id="assembly" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4">Final Assembly</h2>
+            <p class="text-slate-400 mb-12">69 precision-engineered beams supporting Tesla Megapack 2 battery systems</p>
+
+            <div class="bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-lg p-12 text-center">
+                <div class="h-64 bg-gradient-to-b from-blue-600/10 to-transparent rounded flex items-center justify-center mb-8">
+                    <div class="text-slate-500 text-lg">3D Model Visualization Space</div>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Complete Grade Beam Assembly</h3>
+                <p class="text-slate-400 mb-6">23 center beams + 46 end beams with integrated foundation brackets</p>
+                <p class="text-slate-500 text-sm">Beams support Megapack 2 battery enclosures with precision-engineered anchor points</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-slate-800 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-8 h-8 bg-blue-500 rounded flex items-center justify-center font-bold text-sm">LP</div>
+                        <span class="font-semibold">Lindsay Precast</span>
+                    </div>
+                    <p class="text-slate-400 text-sm">Specializing in industrial precast structures</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-3">Project</h4>
+                    <p class="text-slate-400 text-sm">QCELL Tesla Megapack 2<br/>Grade Beams</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-3">Produced By</h4>
+                    <p class="text-slate-400 text-sm">Design & Coordination<br/>by Onelio</p>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-center text-slate-500 text-sm">
+                <p>© 2025 Lindsay Precast | QCELL Tesla Megapack 2 Grade Beams Project</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
