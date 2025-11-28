@@ -39,6 +39,14 @@ export default async function HomePage() {
   const stat3Value = homepage?.stat3Value || '4500'
   const stat3Label = homepage?.stat3Label || 'PSI Concrete Strength'
   
+  // Project Highlights Section
+  const highlightsTitle1 = homepage?.highlightsTitle1 || 'Why This Project Matters'
+  const highlightsDescription1 = homepage?.highlightsDescription1 || 'Battery energy storage systems require precision-engineered foundation solutions. These grade beams represent the intersection of structural engineering excellence and manufacturing expertise.'
+  const highlightsTitle2 = homepage?.highlightsTitle2 || 'Project Scope'
+  const highlightsDescription2 = homepage?.highlightsDescription2 || 'From design consultation to final delivery, this documentation showcases the comprehensive process of manufacturing specialized precast concrete foundations for grid-scale energy storage.'
+  const highlightsTitle3 = homepage?.highlightsTitle3 || 'Quality Assurance'
+  const highlightsDescription3 = homepage?.highlightsDescription3 || 'Every beam manufactured to NPCA standards with rigorous quality control at every production stage.'
+  
   // CTA Section
   const ctaTitle = homepage?.ctaTitle || 'Ready to Learn More?'
   const ctaDescription = homepage?.ctaDescription || 'Explore our detailed project documentation and technical specifications'
@@ -187,6 +195,31 @@ export default async function HomePage() {
             <div className="card-hover bg-gray-50 border border-gray-200 rounded-lg p-8 text-center hover:shadow-lg transition-shadow hover:border-lindsay-red">
               <div className="text-4xl font-bold text-lindsay-red mb-2">{stat3Value}</div>
               <p className="text-gray-700">{stat3Label}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Project Highlights Section */}
+      <section className="py-16 px-6 bg-white border-t border-gray-200">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Highlight 1 */}
+            <div className="bg-white p-6 rounded-lg border-l-4 border-lindsay-red">
+              <h3 className="text-xl font-bold text-lindsay-navy mb-3">{highlightsTitle1}</h3>
+              <p className="text-gray-600 leading-relaxed">{highlightsDescription1}</p>
+            </div>
+            
+            {/* Highlight 2 */}
+            <div className="bg-white p-6 rounded-lg border-l-4 border-lindsay-navy">
+              <h3 className="text-xl font-bold text-lindsay-navy mb-3">{highlightsTitle2}</h3>
+              <p className="text-gray-600 leading-relaxed">{highlightsDescription2}</p>
+            </div>
+            
+            {/* Highlight 3 */}
+            <div className="bg-white p-6 rounded-lg border-l-4 border-lindsay-red">
+              <h3 className="text-xl font-bold text-lindsay-navy mb-3">{highlightsTitle3}</h3>
+              <p className="text-gray-600 leading-relaxed">{highlightsDescription3}</p>
             </div>
           </div>
         </div>

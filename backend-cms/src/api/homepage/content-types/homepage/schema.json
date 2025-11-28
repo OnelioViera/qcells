@@ -73,6 +73,30 @@
     "stat2Value": {
       "type": "string"
     },
+    "highlightsTitle1": {
+      "type": "string",
+      "default": "Why This Project Matters"
+    },
+    "highlightsDescription1": {
+      "type": "text",
+      "default": "Battery energy storage systems require precision-engineered foundation solutions. These grade beams represent the intersection of structural engineering excellence and manufacturing expertise."
+    },
+    "highlightsTitle2": {
+      "type": "string",
+      "default": "Project Scope"
+    },
+    "highlightsDescription2": {
+      "type": "text",
+      "default": "From design consultation to final delivery, this documentation showcases the comprehensive process of manufacturing specialized precast concrete foundations for grid-scale energy storage."
+    },
+    "highlightsTitle3": {
+      "type": "string",
+      "default": "Quality Assurance"
+    },
+    "highlightsDescription3": {
+      "type": "text",
+      "default": "Every beam manufactured to NPCA standards with rigorous quality control at every production stage."
+    },
     "ctaTitle": {
       "type": "string",
       "default": "Ready to Learn More?"

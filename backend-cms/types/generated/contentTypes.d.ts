@@ -541,6 +541,18 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
     heroTitle: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'Tesla Megapack 2'>;
+    highlightsDescription1: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'Battery energy storage systems require precision-engineered foundation solutions. These grade beams represent the intersection of structural engineering excellence and manufacturing expertise.'>;
+    highlightsDescription2: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'From design consultation to final delivery, this documentation showcases the comprehensive process of manufacturing specialized precast concrete foundations for grid-scale energy storage.'>;
+    highlightsDescription3: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'Every beam manufactured to NPCA standards with rigorous quality control at every production stage.'>;
+    highlightsTitle1: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Why This Project Matters'>;
+    highlightsTitle2: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Project Scope'>;
+    highlightsTitle3: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Quality Assurance'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
