@@ -34,6 +34,16 @@
     "designerUrl": {
       "type": "string",
       "default": "https://ojvwebdesign.com"
+    },
+    "npcaLogo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "pciLogo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
     }
   }
 }

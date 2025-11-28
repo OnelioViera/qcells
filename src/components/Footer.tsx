@@ -29,6 +29,14 @@ export async function Footer() {
   const copyrightText = footer.copyrightText || 'Lindsay Precast'
   const designerText = footer.designerText || 'Designed by OJV Webdesign'
   const designerUrl = footer.designerUrl || 'https://ojvwebdesign.com'
+  
+  // Certification logos
+  const npcaLogoUrl = footer.npcaLogo?.url 
+    ? getStrapiMedia(footer.npcaLogo.url) 
+    : null
+  const pciLogoUrl = footer.pciLogo?.url 
+    ? getStrapiMedia(footer.pciLogo.url) 
+    : null
 
   return (
     <footer className="bg-lindsay-navy text-white">
@@ -98,6 +106,34 @@ export async function Footer() {
           <div className="flex-shrink-0 px-4 py-2 border-2 border-white rounded text-sm font-bold">
             {sinceBadgeText}
           </div>
+
+          {/* Certification Logos */}
+          {(npcaLogoUrl || pciLogoUrl) && (
+            <div className="flex gap-4 items-center">
+              {npcaLogoUrl && (
+                <div className="bg-white rounded px-3 py-2">
+                  <Image
+                    src={npcaLogoUrl}
+                    alt="NPCA Certified Plant"
+                    width={120}
+                    height={60}
+                    className="h-12 w-auto object-contain"
+                  />
+                </div>
+              )}
+              {pciLogoUrl && (
+                <div className="bg-white rounded px-3 py-2">
+                  <Image
+                    src={pciLogoUrl}
+                    alt="PCI Precast Concrete Institute"
+                    width={120}
+                    height={60}
+                    className="h-12 w-auto object-contain"
+                  />
+                </div>
+              )}
+            </div>
+          )}
         </div>
       </div>
 

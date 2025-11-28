@@ -500,6 +500,8 @@ export interface ApiFooterFooter extends Struct.SingleTypeSchema {
       'api::footer.footer'
     > &
       Schema.Attribute.Private;
+    npcaLogo: Schema.Attribute.Media<'images'>;
+    pciLogo: Schema.Attribute.Media<'images'>;
     publishedAt: Schema.Attribute.DateTime;
     sinceBadgeText: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'SINCE 1961'>;
