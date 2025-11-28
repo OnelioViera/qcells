@@ -33,11 +33,11 @@ export async function Footer() {
   return (
     <footer className="bg-lindsay-navy text-white">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+      <div className="max-w-7xl mx-auto px-6 py-8">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           
-          {/* Logo and Social Media Column */}
-          <div className="space-y-6">
+          {/* Logo */}
+          <div className="flex-shrink-0">
             <Link href="/" className="inline-block">
               {lindsayLogoUrl ? (
                 <Image
@@ -56,54 +56,47 @@ export async function Footer() {
                 </div>
               )}
             </Link>
-            
-            {/* Social Media Icons */}
-            <div className="flex gap-4">
-              <a 
-                href={linkedinUrl} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition"
-                aria-label="LinkedIn"
-              >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                </svg>
-              </a>
-              <a 
-                href={facebookUrl} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition"
-                aria-label="Facebook"
-              >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
-                </svg>
-              </a>
-            </div>
-
-            {/* Since Badge */}
-            <div className="inline-block px-4 py-2 border-2 border-white rounded text-sm font-bold">
-              {sinceBadgeText}
-            </div>
           </div>
 
-          {/* Navigation Links Column */}
-          <div>
-            <h3 className="text-lg font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-3 text-sm">
-              <li>
-                <Link href="/" className="hover:text-lindsay-red transition">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/projects" className="hover:text-lindsay-red transition">
-                  Projects
-                </Link>
-              </li>
-            </ul>
+          {/* Navigation Links */}
+          <div className="flex gap-8 text-sm">
+            <Link href="/" className="hover:text-lindsay-red transition">
+              Home
+            </Link>
+            <Link href="/projects" className="hover:text-lindsay-red transition">
+              Projects
+            </Link>
+          </div>
+            
+          {/* Social Media Icons */}
+          <div className="flex gap-4">
+            <a 
+              href={linkedinUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition"
+              aria-label="LinkedIn"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a 
+              href={facebookUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition"
+              aria-label="Facebook"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+              </svg>
+            </a>
+          </div>
+
+          {/* Since Badge */}
+          <div className="flex-shrink-0 px-4 py-2 border-2 border-white rounded text-sm font-bold">
+            {sinceBadgeText}
           </div>
         </div>
       </div>
