@@ -523,6 +523,14 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    ctaButton1Text: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Explore the Process'>;
+    ctaButton2Text: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Admin Login'>;
+    ctaDescription: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Explore our detailed project documentation and technical specifications'>;
+    ctaTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Ready to Learn More?'>;
     heroBackgroundImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
@@ -542,12 +550,15 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
     partnersSubtitle: Schema.Attribute.String;
     partnersTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    stat1Label: Schema.Attribute.String;
+    stat1Value: Schema.Attribute.String;
+    stat2Label: Schema.Attribute.String;
+    stat2Value: Schema.Attribute.String;
+    stat3Label: Schema.Attribute.String;
+    stat3Value: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    value1: Schema.Attribute.Blocks;
-    value2: Schema.Attribute.Blocks;
-    value3: Schema.Attribute.Blocks;
   };
 }
 

@@ -39,6 +39,12 @@ export default async function HomePage() {
   const stat3Value = homepage?.stat3Value || '4500'
   const stat3Label = homepage?.stat3Label || 'PSI Concrete Strength'
   
+  // CTA Section
+  const ctaTitle = homepage?.ctaTitle || 'Ready to Learn More?'
+  const ctaDescription = homepage?.ctaDescription || 'Explore our detailed project documentation and technical specifications'
+  const ctaButton1Text = homepage?.ctaButton1Text || 'Explore the Process'
+  const ctaButton2Text = homepage?.ctaButton2Text || 'Admin Login'
+  
   // Debug: Log to see what's actually in Strapi
   console.log('Homepage data from Strapi:', {
     capabilitiesTitle: homepage?.capabilitiesTitle,
@@ -189,16 +195,16 @@ export default async function HomePage() {
         {/* CTA Section */}
         <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4 text-lindsay-navy">Ready to Learn More?</h2>
+          <h2 className="text-3xl font-bold mb-4 text-lindsay-navy">{ctaTitle}</h2>
           <p className="text-gray-600 mb-8">
-            Explore our detailed project documentation and technical specifications
+            {ctaDescription}
           </p>
           <div className="flex gap-4 justify-center">
             <Link 
               href="/projects"
               className="px-6 py-3 bg-lindsay-red hover:bg-lindsay-red-700 text-white rounded font-semibold transition shadow-md hover:shadow-lg"
             >
-              Explore the Process
+              {ctaButton1Text}
             </Link>
             <a 
               href="/admin"
@@ -206,11 +212,11 @@ export default async function HomePage() {
               rel="noopener noreferrer"
               className="px-6 py-3 bg-white hover:bg-gray-50 text-lindsay-navy border border-lindsay-navy rounded font-semibold transition shadow-md hover:shadow-lg"
             >
-              Admin Login
+              {ctaButton2Text}
             </a>
-            </div>
           </div>
-        </section>
+        </div>
+      </section>
       </main>
 
       {/* Footer */}

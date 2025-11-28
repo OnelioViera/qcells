@@ -49,20 +49,45 @@
     "capabilitiesDescription": {
       "type": "string"
     },
-    "value1": {
-      "type": "blocks"
+    "stat1Value": {
+      "type": "string"
     },
-    "value2": {
-      "type": "blocks"
+    "stat1Label": {
+      "type": "string"
     },
-    "value3": {
-      "type": "blocks"
+    "stat2Label": {
+      "type": "string"
+    },
+    "stat3Value": {
+      "type": "string"
+    },
+    "stat3Label": {
+      "type": "string"
     },
     "partnersTitle": {
       "type": "string"
     },
     "partnersSubtitle": {
       "type": "string"
+    },
+    "stat2Value": {
+      "type": "string"
+    },
+    "ctaTitle": {
+      "type": "string",
+      "default": "Ready to Learn More?"
+    },
+    "ctaDescription": {
+      "type": "string",
+      "default": "Explore our detailed project documentation and technical specifications"
+    },
+    "ctaButton1Text": {
+      "type": "string",
+      "default": "Explore the Process"
+    },
+    "ctaButton2Text": {
+      "type": "string",
+      "default": "Admin Login"
     },
     "companyLogos1": {
       "type": "component",
