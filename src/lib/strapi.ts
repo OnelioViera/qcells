@@ -112,7 +112,7 @@ export async function getGlobal() {
  * Get footer content (Single Type)
  */
 export async function getFooter() {
-  return fetchAPI('/api/footer')
+  return fetchAPI('/api/footer?populate[npcaLogo]=true&populate[pciLogo]=true')
 }
 
 /**
