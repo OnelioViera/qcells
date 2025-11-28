@@ -51,7 +51,6 @@ export default async function HomePage() {
   const ctaTitle = homepage?.ctaTitle || 'Ready to Learn More?'
   const ctaDescription = homepage?.ctaDescription || 'Explore our detailed project documentation and technical specifications'
   const ctaButton1Text = homepage?.ctaButton1Text || 'Explore the Process'
-  const ctaButton2Text = homepage?.ctaButton2Text || 'Admin Login'
   
   // Debug: Log to see what's actually in Strapi
   console.log('Homepage data from Strapi:', {
@@ -239,14 +238,6 @@ export default async function HomePage() {
             >
               {ctaButton1Text}
             </Link>
-            <a 
-              href="/admin"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-white hover:bg-gray-50 text-lindsay-navy border border-lindsay-navy rounded font-semibold transition shadow-md hover:shadow-lg"
-            >
-              {ctaButton2Text}
-            </a>
           </div>
         </div>
       </section>
