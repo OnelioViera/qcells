@@ -19,16 +19,6 @@ async function getHomepageData() {
 export default async function HomePage() {
   const homepage = await getHomepageData()
 
-  // Debug: Log stats to see what Strapi is returning
-  console.log('Stats from Strapi:', {
-    stat1Value: homepage?.stat1Value,
-    stat1Label: homepage?.stat1Label,
-    stat2Value: homepage?.stat2Value,
-    stat2Label: homepage?.stat2Label,
-    stat3Value: homepage?.stat3Value,
-    stat3Label: homepage?.stat3Label,
-  })
-
   // Fallback content if CMS not configured yet
   const heroTitle = homepage?.heroTitle || 'Tesla Megapack 2'
   const heroSubtitle = homepage?.heroSubtitle || 'Grade Beams'
@@ -38,12 +28,17 @@ export default async function HomePage() {
   const partnersTitle = homepage?.partnersTitle || ''
   const partnersSubtitle = homepage?.partnersSubtitle || ''
   
-  const stat1Value = homepage?.stat1Value || '69'
-  const stat1Label = homepage?.stat1Label || 'Total Beams Manufactured'
-  const stat2Value = homepage?.stat2Value || '354.5"'
-  const stat2Label = homepage?.stat2Label || 'Maximum Beam Length'
-  const stat3Value = homepage?.stat3Value || '4500'
-  const stat3Label = homepage?.stat3Label || 'PSI Concrete Strength'
+  // Capabilities section - note: these use the actual Strapi field names
+  const capabilitiesTitle = homepage?.capabilitiesTitle || 'Our Capabilities'
+  
+  // Debug: Log to see what's actually in Strapi
+  console.log('Homepage data from Strapi:', {
+    capabilitiesTitle: homepage?.capabilitiesTitle,
+    capabilitiesDescription: homepage?.capabilitiesDescription,
+    value1: homepage?.value1,
+    value2: homepage?.value2,
+    value3: homepage?.value3,
+  })
 
   const heroImageUrl = homepage?.heroImage?.url 
     ? getStrapiMedia(homepage.heroImage.url) 
