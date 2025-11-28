@@ -1,10 +1,11 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { getGlobal, getStrapiMedia } from '@/lib/strapi'
+import { getGlobal, getFooter, getStrapiMedia } from '@/lib/strapi'
 
 export async function Footer() {
   // Fetch global data to get Lindsay logo and footer content
   const global = await getGlobal()
+  const footerData = await getFooter()
   
   const lindsayLogoUrl = global?.data?.lindsayLogo?.url 
     ? getStrapiMedia(global.data.lindsayLogo.url) 
@@ -12,6 +13,15 @@ export async function Footer() {
   
   const siteName = global?.data?.siteName || 'Lindsay Precast'
   const currentYear = new Date().getFullYear()
+  
+  // Footer content from Strapi
+  const footer = footerData?.data || {}
+  const linkedinUrl = footer.linkedinUrl || 'https://www.linkedin.com/company/lindsay-precast'
+  const facebookUrl = footer.facebookUrl || 'https://www.facebook.com/lindsayprecast'
+  const sinceBadgeText = footer.sinceBadgeText || 'SINCE 1961'
+  const copyrightText = footer.copyrightText || 'Lindsay Precast'
+  const designerText = footer.designerText || 'Designed by OJV Webdesign'
+  const designerUrl = footer.designerUrl || 'https://ojvwebdesign.com'
 
   return (
     <footer className="bg-lindsay-navy text-white">
@@ -43,7 +53,7 @@ export async function Footer() {
             {/* Social Media Icons */}
             <div className="flex gap-4">
               <a 
-                href="https://www.linkedin.com/company/lindsay-precast" 
+                href={linkedinUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition"
@@ -54,7 +64,7 @@ export async function Footer() {
                 </svg>
               </a>
               <a 
-                href="https://www.facebook.com/lindsayprecast" 
+                href={facebookUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition"
@@ -68,7 +78,7 @@ export async function Footer() {
 
             {/* Since Badge */}
             <div className="inline-block px-4 py-2 border-2 border-white rounded text-sm font-bold">
-              SINCE 1961
+              {sinceBadgeText}
             </div>
           </div>
 
@@ -170,7 +180,7 @@ export async function Footer() {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/70">
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
-              <span>© {currentYear} Lindsay Precast</span>
+              <span>© {currentYear} {copyrightText}</span>
               <span className="hidden md:inline">|</span>
               <Link href="/privacy" className="hover:text-white transition">
                 Privacy Policy
@@ -185,7 +195,14 @@ export async function Footer() {
               </Link>
             </div>
             <div className="text-xs">
-              Designed by OJV Webdesign
+              <a 
+                href={designerUrl} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-white transition"
+              >
+                {designerText}
+              </a>
             </div>
           </div>
         </div>

@@ -470,6 +470,45 @@ export interface ApiBeamTypeBeamType extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiFooterFooter extends Struct.SingleTypeSchema {
+  collectionName: 'footers';
+  info: {
+    displayName: 'Footer';
+    pluralName: 'footers';
+    singularName: 'footer';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    copyrightText: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Lindsay Precast'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    designerText: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Designed by OJV Webdesign'>;
+    designerUrl: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'https://ojvwebdesign.com'>;
+    facebookUrl: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'https://www.facebook.com/lindsayprecast'>;
+    linkedinUrl: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'https://www.linkedin.com/company/lindsay-precast'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::footer.footer'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sinceBadgeText: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'SINCE 1961'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   collectionName: 'globals';
   info: {
@@ -1244,6 +1283,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::beam-type.beam-type': ApiBeamTypeBeamType;
+      'api::footer.footer': ApiFooterFooter;
       'api::global.global': ApiGlobalGlobal;
       'api::homepage.homepage': ApiHomepageHomepage;
       'api::manufacturing-step.manufacturing-step': ApiManufacturingStepManufacturingStep;

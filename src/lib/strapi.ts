@@ -109,6 +109,13 @@ export async function getGlobal() {
 }
 
 /**
+ * Get footer content (Single Type)
+ */
+export async function getFooter() {
+  return fetchAPI('/api/footer')
+}
+
+/**
  * Helper function to get image URL from Strapi media
  */
 export function getStrapiMedia(url: string | null | undefined) {

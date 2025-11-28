@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "linkedinUrl": {
+      "type": "string",
+      "default": "https://www.linkedin.com/company/lindsay-precast"
+    },
+    "facebookUrl": {
+      "type": "string",
+      "default": "https://www.facebook.com/lindsayprecast"
+    },
+    "sinceBadgeText": {
+      "type": "string",
+      "default": "SINCE 1961"
+    },
+    "copyrightText": {
+      "type": "string",
+      "default": "Lindsay Precast"
+    },
+    "designerText": {
+      "type": "string",
+      "default": "Designed by OJV Webdesign"
+    },
+    "designerUrl": {
+      "type": "string",
+      "default": "https://ojvwebdesign.com"
+    }
+  }
+}
+
