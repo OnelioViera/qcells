@@ -31,8 +31,10 @@ STRAPI_ADMIN_CLIENT_PREVIEW_SECRET=your-preview-secret-here
 ADMIN_EMAIL=admin@example.com
 ADMIN_PASSWORD=change-this-password
 
-# Optional: File Upload (Cloudinary)
-# CLOUDINARY_NAME=your-cloud-name
-# CLOUDINARY_KEY=your-api-key
-# CLOUDINARY_SECRET=your-api-secret
+# File Upload (Cloudinary - REQUIRED for production!)
+# Sign up at: https://cloudinary.com/users/register/free
+UPLOAD_PROVIDER=cloudinary
+CLOUDINARY_NAME=your-cloud-name
+CLOUDINARY_KEY=your-api-key
+CLOUDINARY_SECRET=your-api-secret
 
