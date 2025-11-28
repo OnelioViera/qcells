@@ -31,13 +31,24 @@ export default async function HomePage() {
   // Capabilities section - note: these use the actual Strapi field names
   const capabilitiesTitle = homepage?.capabilitiesTitle || 'Our Capabilities'
   
+  // Stats - using fallback values for now
+  const stat1Value = homepage?.stat1Value || '69'
+  const stat1Label = homepage?.stat1Label || 'Total Beams Manufactured'
+  const stat2Value = homepage?.stat2Value || '354.5"'
+  const stat2Label = homepage?.stat2Label || 'Maximum Beam Length'
+  const stat3Value = homepage?.stat3Value || '4500'
+  const stat3Label = homepage?.stat3Label || 'PSI Concrete Strength'
+  
   // Debug: Log to see what's actually in Strapi
   console.log('Homepage data from Strapi:', {
     capabilitiesTitle: homepage?.capabilitiesTitle,
     capabilitiesDescription: homepage?.capabilitiesDescription,
-    value1: homepage?.value1,
-    value2: homepage?.value2,
-    value3: homepage?.value3,
+    stat1Value: homepage?.stat1Value,
+    stat1Label: homepage?.stat1Label,
+    stat2Value: homepage?.stat2Value,
+    stat2Label: homepage?.stat2Label,
+    stat3Value: homepage?.stat3Value,
+    stat3Label: homepage?.stat3Label,
   })
 
   const heroImageUrl = homepage?.heroImage?.url 
