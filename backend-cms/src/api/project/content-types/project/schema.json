@@ -40,9 +40,6 @@
     "endBeams": {
       "type": "integer"
     },
-    "totalWeight": {
-      "type": "decimal"
-    },
     "projectStatus": {
       "type": "enumeration",
       "required": true,
@@ -77,6 +74,18 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::rebar-config.rebar-config"
+    },
+    "interiorBeamWeight": {
+      "type": "string"
+    },
+    "pounds1": {
+      "type": "integer"
+    },
+    "exteriorBeamWeight": {
+      "type": "string"
+    },
+    "pounds2": {
+      "type": "integer"
     }
   }
 }

@@ -670,9 +670,11 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     customer: Schema.Attribute.String & Schema.Attribute.Required;
     description: Schema.Attribute.Blocks;
     endBeams: Schema.Attribute.Integer;
+    exteriorBeamWeight: Schema.Attribute.String;
     fabricator: Schema.Attribute.String & Schema.Attribute.Required;
     featured: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     heroImage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    interiorBeamWeight: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -683,6 +685,8 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
       'oneToMany',
       'api::manufacturing-step.manufacturing-step'
     >;
+    pounds1: Schema.Attribute.Integer;
+    pounds2: Schema.Attribute.Integer;
     projectStatus: Schema.Attribute.Enumeration<
       ['draft', 'active', 'complete', 'archived']
     > &
@@ -698,7 +702,6 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
     totalQuantity: Schema.Attribute.Integer;
-    totalWeight: Schema.Attribute.Decimal;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

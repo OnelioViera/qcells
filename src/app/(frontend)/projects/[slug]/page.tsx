@@ -135,6 +135,28 @@ export default async function ProjectPage({ params }: PageProps) {
             </div>
           )}
 
+          {/* Beam Weights */}
+          {(project.pounds1 || project.pounds2) && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+              {project.pounds1 && (
+                <div className="bg-lindsay-light-gray border border-lindsay-navy/20 rounded-lg p-6">
+                  <div className="text-lindsay-navy text-sm mb-1 font-semibold">
+                    {project.interiorBeamWeight || 'Interior Beam Weight'}
+                  </div>
+                  <div className="text-2xl font-bold text-lindsay-navy">{project.pounds1.toLocaleString()} lbs</div>
+                </div>
+              )}
+              {project.pounds2 && (
+                <div className="bg-lindsay-light-gray border border-lindsay-navy/20 rounded-lg p-6">
+                  <div className="text-lindsay-navy text-sm mb-1 font-semibold">
+                    {project.exteriorBeamWeight || 'Exterior Beam Weight'}
+                  </div>
+                  <div className="text-2xl font-bold text-lindsay-navy">{project.pounds2.toLocaleString()} lbs</div>
+                </div>
+              )}
+            </div>
+          )}
+
           {/* Description */}
           {descriptionText && (
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-8 mb-12">

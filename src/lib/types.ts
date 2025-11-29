@@ -61,6 +61,10 @@ export interface Project {
   centerBeams?: number
   endBeams?: number
   totalWeight?: number
+  interiorBeamWeight?: string
+  pounds1?: number
+  exteriorBeamWeight?: string
+  pounds2?: number
   projectStatus?: 'draft' | 'active' | 'completed' | 'archived'
   featured?: boolean
   heroImage?: StrapiMedia | null
