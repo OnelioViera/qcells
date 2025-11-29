@@ -184,15 +184,15 @@ export default async function ProjectPage({ params }: PageProps) {
                               {(() => {
                                 // Convert all step images to the format needed by ImageModal
                                 const allStepImages = stepImages
-                                  .filter(image => image && image.url)
-                                  .map((image, idx) => ({
+                                  .filter((image: any) => image && image.url)
+                                  .map((image: any, idx: number) => ({
                                     src: getStrapiMedia(image.url) || '',
                                     alt: image.alternativeText || `Step ${step.stepNumber || '?'} image ${idx + 1}`
                                   }))
-                                  .filter(img => img.src)
+                                  .filter((img: any) => img.src)
 
                                 // Render thumbnails that all open the same gallery
-                                return allStepImages.map((image, idx) => (
+                                return allStepImages.map((image: any, idx: number) => (
                                   <ImageModal
                                     key={idx}
                                     images={allStepImages}
