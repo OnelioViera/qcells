@@ -8,9 +8,9 @@ import { Footer } from '@/components/Footer'
 import { ImageModal } from '@/components/ImageModal'
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 async function getProjectData(slug: string) {
