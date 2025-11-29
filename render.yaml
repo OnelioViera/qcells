@@ -6,8 +6,8 @@ services:
     plan: starter
     region: oregon
     rootDir: backend-cms
-    buildCommand: npm install && npm run build && mkdir -p public/uploads
-    startCommand: npm start
+    buildCommand: npm install && npm run build
+    startCommand: mkdir -p public/uploads && npm start
     healthCheckPath: /_health
     envVars:
       - key: NODE_VERSION
