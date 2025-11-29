@@ -32,7 +32,7 @@ export default function AdminRedirect() {
           </div>
         </div>
         <p className="text-slate-500 text-sm mt-8">
-          If you're not redirected, <a href="http://localhost:1337/admin" className="text-blue-400 hover:underline">click here</a>
+          If you&apos;re not redirected, <a href="http://localhost:1337/admin" className="text-blue-400 hover:underline">click here</a>
         </p>
       </div>
     </div>
