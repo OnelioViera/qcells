@@ -151,8 +151,8 @@ export default async function ProjectPage({ params }: PageProps) {
               <h2 className="text-2xl font-bold mb-6 text-lindsay-navy">Manufacturing Process</h2>
               <div className="space-y-6">
                 {project.manufacturing_steps
-                  .sort((a, b) => (a.stepNumber || 0) - (b.stepNumber || 0))
-                  .map((step) => {
+                  .sort((a: any, b: any) => (a.stepNumber || 0) - (b.stepNumber || 0))
+                  .map((step: any) => {
                     const stepDescription = step.description?.[0]?.children?.[0]?.text || ''
                     const stepImages = Array.isArray(step.images) ? step.images : []
                     
