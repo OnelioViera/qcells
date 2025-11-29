@@ -1,0 +1,544 @@
+{
+  "documentId": "rydiow49gg0xsibjmstof1qs",
+  "name": "Author",
+  "code": "strapi-author",
+  "description": "Authors can manage the content they have created.",
+  "locale": null,
+  "permissions": [
+    {
+      "documentId": "n1c75wvmufe3qg8vwzenlbfa",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::beam-type.beam-type",
+      "properties": {
+        "fields": [
+          "name",
+          "type",
+          "length",
+          "width",
+          "height",
+          "weight",
+          "description",
+          "technicalDrawing"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "jyhaeeuf1z59gkpk15ynmv87",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::beam-type.beam-type",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "yelxgzwwpp2h2854otdkpv72",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::beam-type.beam-type",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "trjn1hngtsei1pd94mfswt1v",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::beam-type.beam-type",
+      "properties": {
+        "fields": [
+          "name",
+          "type",
+          "length",
+          "width",
+          "height",
+          "weight",
+          "description",
+          "technicalDrawing"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "k7400yaovb77xdetlctkxpxl",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::beam-type.beam-type",
+      "properties": {
+        "fields": [
+          "name",
+          "type",
+          "length",
+          "width",
+          "height",
+          "weight",
+          "description",
+          "technicalDrawing"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "yt2nhrmixz3j2r5bvwputwsl",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::manufacturing-step.manufacturing-step",
+      "properties": {
+        "fields": [
+          "title",
+          "stepNumber",
+          "description",
+          "duration",
+          "equipment",
+          "images"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "l9nhyaxey8u71i04jtjpii9p",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::manufacturing-step.manufacturing-step",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "mnkzltf4bu6gpbvvw0qhos76",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::manufacturing-step.manufacturing-step",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "p47rw01btzv2lit3xfzn5l4v",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::manufacturing-step.manufacturing-step",
+      "properties": {
+        "fields": [
+          "title",
+          "stepNumber",
+          "description",
+          "duration",
+          "equipment",
+          "images"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "y7jqnfewvgvntcftym1qtr34",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::manufacturing-step.manufacturing-step",
+      "properties": {
+        "fields": [
+          "title",
+          "stepNumber",
+          "description",
+          "duration",
+          "equipment",
+          "images"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "nppsgbbdj0m453apm40zit4w",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::project.project",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "customer",
+          "fabricator",
+          "description",
+          "totalQuantity",
+          "centerBeams",
+          "endBeams",
+          "projectStatus",
+          "featured",
+          "heroImage",
+          "manufacturing_steps",
+          "rebar_configs",
+          "interiorBeamWeight",
+          "pounds1",
+          "exteriorBeamWeight",
+          "pounds2"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "slfobosx8mubsuc0r7h2qk4g",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::project.project",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "m5xvt5vjhgo4kx2ehdu1agaf",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::project.project",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "ih6183eb0p647l6l21z1dxbb",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::project.project",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "customer",
+          "fabricator",
+          "description",
+          "totalQuantity",
+          "centerBeams",
+          "endBeams",
+          "projectStatus",
+          "featured",
+          "heroImage",
+          "manufacturing_steps",
+          "rebar_configs",
+          "interiorBeamWeight",
+          "pounds1",
+          "exteriorBeamWeight",
+          "pounds2"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "uilmoolm7u5rz9wr3aze8va0",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::project.project",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "customer",
+          "fabricator",
+          "description",
+          "totalQuantity",
+          "centerBeams",
+          "endBeams",
+          "projectStatus",
+          "featured",
+          "heroImage",
+          "manufacturing_steps",
+          "rebar_configs",
+          "interiorBeamWeight",
+          "pounds1",
+          "exteriorBeamWeight",
+          "pounds2"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "sh4osp5u8oi3vdlnprmo3scz",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::rebar-config.rebar-config",
+      "properties": {
+        "fields": [
+          "name",
+          "barSize",
+          "spacing",
+          "cover",
+          "totalLinearFeet",
+          "drawings"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "lgjdyzpybncafc05xh5p1uc8",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::rebar-config.rebar-config",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "myox44tf3r25v0czht5ho6sa",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::rebar-config.rebar-config",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "zd9nstclcv5g7zjrahi4i88f",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::rebar-config.rebar-config",
+      "properties": {
+        "fields": [
+          "name",
+          "barSize",
+          "spacing",
+          "cover",
+          "totalLinearFeet",
+          "drawings"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "m7u8d1iaicvrl6u8mwh8sfe1",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::rebar-config.rebar-config",
+      "properties": {
+        "fields": [
+          "name",
+          "barSize",
+          "spacing",
+          "cover",
+          "totalLinearFeet",
+          "drawings"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "g1tipz7q3atf59y0fiy1v6qp",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::technical-spec.technical-spec",
+      "properties": {
+        "fields": [
+          "name",
+          "category",
+          "value",
+          "unit",
+          "standard"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "f00p2fgfb4w06pozbleo9tjw",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::technical-spec.technical-spec",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "bz3zh4hmc61mq6uht4n4qtmj",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::technical-spec.technical-spec",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "o1u2opoh016o6l1x08hi4qhg",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::technical-spec.technical-spec",
+      "properties": {
+        "fields": [
+          "name",
+          "category",
+          "value",
+          "unit",
+          "standard"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "g8ianzxsu8ldx1ng8sa5i15n",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::technical-spec.technical-spec",
+      "properties": {
+        "fields": [
+          "name",
+          "category",
+          "value",
+          "unit",
+          "standard"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "ah9fu6kfaw89t9t5riikpbc6",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "plugin::users-permissions.user",
+      "properties": {
+        "fields": [
+          "username",
+          "email",
+          "provider",
+          "password",
+          "resetPasswordToken",
+          "confirmationToken",
+          "confirmed",
+          "blocked",
+          "role"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "z5sibe9sf6vf1kbdl64ewf2g",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "plugin::users-permissions.user",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "vqwa43vlh20qoxbtwzv9yui0",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "plugin::users-permissions.user",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "ylh6bzilrdzue3h4ayqa89wr",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "plugin::users-permissions.user",
+      "properties": {
+        "fields": [
+          "username",
+          "email",
+          "provider",
+          "password",
+          "resetPasswordToken",
+          "confirmationToken",
+          "confirmed",
+          "blocked",
+          "role"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "iq3f9c7v83r9dv4qafr4pyz9",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "plugin::users-permissions.user",
+      "properties": {
+        "fields": [
+          "username",
+          "email",
+          "provider",
+          "password",
+          "resetPasswordToken",
+          "confirmationToken",
+          "confirmed",
+          "blocked",
+          "role"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "v28dj9it0zruq95li4qcgmxj",
+      "action": "plugin::upload.assets.copy-link",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "zj9e7v836s1q5jwud8170tph",
+      "action": "plugin::upload.assets.create",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "w7a25jym4xs8mys2rdntivtz",
+      "action": "plugin::upload.assets.download",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "i9772dvkeg7z10wgitg8rsli",
+      "action": "plugin::upload.assets.update",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ],
+      "locale": null
+    },
+    {
+      "documentId": "ah5jnhvtbkp8r7r4y4243nmb",
+      "action": "plugin::upload.configure-view",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "jyvvcq17qfqxq6e9kayk8ojz",
+      "action": "plugin::upload.read",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ],
+      "locale": null
+    }
+  ]
+}

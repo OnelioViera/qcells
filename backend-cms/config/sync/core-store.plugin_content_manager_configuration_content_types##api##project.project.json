@@ -1,0 +1,430 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::project.project",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "title",
+      "defaultSortBy": "title",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "title": {
+        "edit": {
+          "label": "title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "slug": {
+        "edit": {
+          "label": "slug",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "slug",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "customer": {
+        "edit": {
+          "label": "customer",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "customer",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "fabricator": {
+        "edit": {
+          "label": "fabricator",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fabricator",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "totalQuantity": {
+        "edit": {
+          "label": "totalQuantity",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "totalQuantity",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "centerBeams": {
+        "edit": {
+          "label": "centerBeams",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "centerBeams",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "endBeams": {
+        "edit": {
+          "label": "endBeams",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "endBeams",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "projectStatus": {
+        "edit": {
+          "label": "projectStatus",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "projectStatus",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "featured": {
+        "edit": {
+          "label": "featured",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "featured",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "heroImage": {
+        "edit": {
+          "label": "heroImage",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "heroImage",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "manufacturing_steps": {
+        "edit": {
+          "label": "manufacturing_steps",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "title"
+        },
+        "list": {
+          "label": "manufacturing_steps",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "rebar_configs": {
+        "edit": {
+          "label": "rebar_configs",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "rebar_configs",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "interiorBeamWeight": {
+        "edit": {
+          "label": "interiorBeamWeight",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "interiorBeamWeight",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "pounds1": {
+        "edit": {
+          "label": "pounds1",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "pounds1",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "exteriorBeamWeight": {
+        "edit": {
+          "label": "exteriorBeamWeight",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "exteriorBeamWeight",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "pounds2": {
+        "edit": {
+          "label": "pounds2",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "pounds2",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "documentId": {
+        "edit": {},
+        "list": {
+          "label": "documentId",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "title",
+        "createdAt",
+        "updatedAt"
+      ],
+      "edit": [
+        [
+          {
+            "name": "title",
+            "size": 6
+          },
+          {
+            "name": "slug",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "customer",
+            "size": 6
+          },
+          {
+            "name": "fabricator",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "description",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "totalQuantity",
+            "size": 4
+          },
+          {
+            "name": "centerBeams",
+            "size": 4
+          },
+          {
+            "name": "endBeams",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "projectStatus",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "featured",
+            "size": 4
+          },
+          {
+            "name": "heroImage",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "manufacturing_steps",
+            "size": 6
+          },
+          {
+            "name": "rebar_configs",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "interiorBeamWeight",
+            "size": 6
+          },
+          {
+            "name": "pounds1",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "exteriorBeamWeight",
+            "size": 6
+          },
+          {
+            "name": "pounds2",
+            "size": 4
+          }
+        ]
+      ]
+    },
+    "uid": "api::project.project"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
