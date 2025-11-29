@@ -50,8 +50,8 @@ function renderNode(node: RichTextNode, index: number): React.ReactNode {
       return <p key={index} className="mb-4">{children}</p>
 
     case 'heading':
-      const HeadingTag = `h${node.level || 1}` as keyof JSX.IntrinsicElements
-      const headingClasses = {
+      const HeadingTag = `h${node.level || 1}` as any
+      const headingClasses: { [key: number]: string } = {
         1: 'text-4xl font-bold mb-4',
         2: 'text-3xl font-bold mb-3',
         3: 'text-2xl font-bold mb-3',

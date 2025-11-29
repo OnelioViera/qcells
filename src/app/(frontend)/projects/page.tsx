@@ -72,7 +72,7 @@ export default async function ProjectsPage() {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {projects.map((project) => {
+              {projects.map((project: any) => {
                 const imageUrl = project.heroImage?.url
                   ? getStrapiMedia(project.heroImage.url)
                   : null

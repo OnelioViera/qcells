@@ -20,7 +20,7 @@ export interface StrapiSingleResponse<T> {
 }
 
 // Base Strapi entity (Strapi 5 - flat structure)
-export interface StrapiEntity<T> extends T {
+export type StrapiEntity<T> = T & {
   id: number
   documentId: string
   createdAt: string
