@@ -10,7 +10,7 @@ services:
     healthCheckPath: /_health
     envVars:
       - key: NODE_VERSION
-        value: 18.19.0
+        value: 20.11.0
       - key: NODE_ENV
         value: production
       - key: DATABASE_CLIENT

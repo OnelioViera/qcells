@@ -667,11 +667,11 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    customer: Schema.Attribute.String & Schema.Attribute.Required;
+    customer: Schema.Attribute.String;
     description: Schema.Attribute.Blocks;
     endBeams: Schema.Attribute.Integer;
     exteriorBeamWeight: Schema.Attribute.String;
-    fabricator: Schema.Attribute.String & Schema.Attribute.Required;
+    fabricator: Schema.Attribute.String;
     featured: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     heroImage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     interiorBeamWeight: Schema.Attribute.String;
@@ -687,16 +687,16 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     >;
     pounds1: Schema.Attribute.Integer;
     pounds2: Schema.Attribute.Integer;
+    projects: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::rebar-config.rebar-config'
+    >;
     projectStatus: Schema.Attribute.Enumeration<
       ['draft', 'active', 'complete', 'archived']
     > &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'active'>;
     publishedAt: Schema.Attribute.DateTime;
-    rebar_configs: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::rebar-config.rebar-config'
-    >;
     slug: Schema.Attribute.UID<'title'>;
     title: Schema.Attribute.String &
       Schema.Attribute.Required &
@@ -735,6 +735,7 @@ export interface ApiRebarConfigRebarConfig extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     name: Schema.Attribute.String & Schema.Attribute.Required;
+    projects: Schema.Attribute.Relation<'oneToMany', 'api::project.project'>;
     publishedAt: Schema.Attribute.DateTime;
     spacing: Schema.Attribute.String;
     totalLinearFeet: Schema.Attribute.Decimal;

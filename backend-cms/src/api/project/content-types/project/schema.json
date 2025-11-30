@@ -22,11 +22,11 @@
     },
     "customer": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "fabricator": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "description": {
       "type": "blocks"
@@ -70,11 +70,6 @@
       "relation": "oneToMany",
       "target": "api::manufacturing-step.manufacturing-step"
     },
-    "rebar_configs": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::rebar-config.rebar-config"
-    },
     "interiorBeamWeight": {
       "type": "string"
     },
@@ -86,6 +81,11 @@
     },
     "pounds2": {
       "type": "integer"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::rebar-config.rebar-config"
     }
   }
 }

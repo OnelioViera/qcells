@@ -36,6 +36,11 @@
         "videos",
         "audios"
       ]
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
     }
   }
 }
